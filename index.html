@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link  rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/2048px-Google_Contacts_icon.svg.png">
+    
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <nav>
+        <h1>contact management system</h1>
+      </nav>
+
+    <div id="addContact">
+        <div class="Form">
+        <h2>Add Contact</h2>
+        <form id="form">
+            <div class="form-group">
+                <label for="name-input">Name</label>
+                <input type="text" id="name-input" class="inputs" placeholder="Enter your Name"/>
+
+                <label for="num-input">Phone Number</label>
+                <input type="tel" id="num-input" class="inputs" placeholder="123-4567-890" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" />
+
+                <label for="email-input">Email</label>
+                <input type="email" id="email-input" class="inputs" placeholder="Enter your Email"/>
+
+                <input id="submit-btn" value="Add Task" type="submit" />
+                <!-- <button id="submit-btn" onclick="window.print()">print</button> -->
+            </div>    
+        </form>
+        </div>
+        <div class="DETAILS">
+        <h3 class="details">contact details</h3>
+        </div>
+        <ul id="task-lists">
+
+        </ul>
+    </div>
+</body>
+</html>
